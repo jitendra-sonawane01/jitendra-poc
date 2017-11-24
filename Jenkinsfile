@@ -1,1 +1,10 @@
-echo("hello from Pipeline");
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'set'
+            }
+        }
+    }
+}
